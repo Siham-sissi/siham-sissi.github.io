@@ -6,10 +6,9 @@ import os
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
 SITE_NAME = "Siham Larbi"
-EMAIL = "siham.larbi@example.com"  # PLACEHOLDER - to be replaced by Siham
-GITHUB = "https://github.com/siham-larbi"  # PLACEHOLDER - to be replaced
-KAGGLE = "https://www.kaggle.com/sihamlarbi"  # PLACEHOLDER - to be replaced
-LINKEDIN = "https://linkedin.com/in/siham-larbi"
+EMAIL = "sihamlarbi.21@gmail.com"
+GITHUB = "https://github.com/Siham-sissi"
+LINKEDIN = "https://www.linkedin.com/in/siham-larbi"
 
 # ---------------------------------------------------------------------------
 # Icons (custom line-icon set, distinct from the original site's icon style)
@@ -108,7 +107,7 @@ def page_shell(lang, depth, current_nav, page_key, title, description, body_html
     langswitch = lang_switch_html(lang, depth, page_key)
 
     social = ""
-    for name, url in (("github", GITHUB), ("linkedin", LINKEDIN), ("kaggle", KAGGLE)):
+    for name, url in (("github", GITHUB), ("linkedin", LINKEDIN)):
         social += '<a href="%s" target="_blank" rel="noopener noreferrer" aria-label="%s">%s</a>' % (url, name, icon(name, "icon"))
 
     home_href = asset_path(depth, "fr/index.html") if lang == "fr" else asset_path(depth, "index.html")
