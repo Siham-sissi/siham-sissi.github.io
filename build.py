@@ -56,7 +56,7 @@ L["fr"].update({
 })
 
 from content import PROFILE as _P
-EMAIL = "siham.larbi@example.com"
+EMAIL = "sihamlarbi.21@gmail.com"
 
 def tags_html(items):
     return '<div class="tags">' + "".join('<span class="tag">%s</span>' % t for t in items) + "</div>"
@@ -105,7 +105,6 @@ def build_home(lang, depth):
     <div class="actions">
       <a class="btn primary" href="{cv_href}">{view_cv} {arrow}</a>
       <a class="btn" href="{gh}" target="_blank" rel="noopener noreferrer">{github_icon} GitHub</a>
-      <a class="btn" href="{kg}" target="_blank" rel="noopener noreferrer">{kaggle_icon} Kaggle</a>
       <a class="btn" href="{li}" target="_blank" rel="noopener noreferrer">{linkedin_icon} LinkedIn</a>
     </div>
   </div>
@@ -138,8 +137,8 @@ def build_home(lang, depth):
         role=p["title"], name=SITE_NAME, lede=p["lede"],
         cv_href="cv.html",
         view_cv=t["view_cv"], arrow=icon("arrow"),
-        gh="https://github.com/siham-larbi", kg="https://www.kaggle.com/sihamlarbi", li="https://linkedin.com/in/siham-larbi",
-        github_icon=icon("github"), kaggle_icon=icon("kaggle"), linkedin_icon=icon("linkedin"),
+        gh="https://github.com/Siham-sissi", li="https://www.linkedin.com/in/siham-larbi",
+        github_icon=icon("github"), linkedin_icon=icon("linkedin"),
         strip=strip_html(lang), readout=readout_html(lang),
         research_eyebrow=t["research_eyebrow"], home_highlights=t["home_highlights"], research_cards=research_cards,
         latest_projects=t["latest_projects"], project_cards=project_cards,
@@ -332,7 +331,7 @@ def build_cv(lang, depth):
 <p><strong>Master's Degree, Intelligent Computer Systems</strong> \u2014 Mouloud Mammeri University of Tizi-Ouzou (2024\u20132026)</p>
 <p><strong>Bachelor's Degree in Computer Science</strong> \u2014 Mouloud Mammeri University of Tizi-Ouzou (2022\u20132024)</p>
 <p><strong>First Year, Mathematics and Computer Science</strong> \u2014 Mouloud Mammeri University of Tizi-Ouzou (2021\u20132022)</p>
-<p><strong>Scientific Baccalaureate</strong>, Honours \u2014 [high school name] (2021)</p>
+<p><strong>Scientific Baccalaureate</strong>, Honours \u2014 Fr\u00e8res Abbache High School, Mekla (2021)</p>
 """
         research_p = """
 <p><strong>Graduate research (2026):</strong> "Detecting Steganography from Generative Models: Distinguishing Steganographic Images from Synthetic Images." Carried out with Idir Rebhi, supervised by M. Samy Sadi and Mlle Hedir Tassadit, Universit\u00e9 Mouloud Mammeri de Tizi-Ouzou.</p>
@@ -358,7 +357,7 @@ def build_cv(lang, depth):
 <p><strong>Master, Syst\u00e8mes Informatiques Intelligents</strong> \u2014 Universit\u00e9 Mouloud Mammeri de Tizi-Ouzou (2024\u20132026)</p>
 <p><strong>Licence en Informatique</strong> \u2014 Universit\u00e9 Mouloud Mammeri de Tizi-Ouzou (2022\u20132024)</p>
 <p><strong>1\u00e8re ann\u00e9e Math\u00e9matiques et Informatique</strong> \u2014 Universit\u00e9 Mouloud Mammeri de Tizi-Ouzou (2021\u20132022)</p>
-<p><strong>Baccalaur\u00e9at scientifique</strong>, mention \u2014 [nom de l'\u00e9tablissement] (2021)</p>
+<p><strong>Baccalaur\u00e9at scientifique</strong>, mention \u2014 Fr\u00e8res Abbache High School, Mekla (2021)</p>
 """
         research_p = """
 <p><strong>Travail de recherche du master (2026) :</strong> « D\u00e9tection de st\u00e9ganographie issue de mod\u00e8les g\u00e9n\u00e9ratifs : distinction entre images st\u00e9ganographi\u00e9es et images synth\u00e9tiques ». R\u00e9alis\u00e9 avec Idir Rebhi, sous la direction de M. Samy Sadi et Mlle Hedir Tassadit, Universit\u00e9 Mouloud Mammeri de Tizi-Ouzou.</p>
@@ -439,7 +438,6 @@ def build_contact(lang, depth):
     <p class="eyebrow">{profiles}</p>
     <div class="actions" style="margin-top:1rem;">
       <a class="btn" href="{gh}" target="_blank" rel="noopener noreferrer">{github_icon} GitHub</a>
-      <a class="btn" href="{kg}" target="_blank" rel="noopener noreferrer">{kaggle_icon} Kaggle</a>
       <a class="btn" href="{li}" target="_blank" rel="noopener noreferrer">{linkedin_icon} LinkedIn</a>
     </div>
   </div>
@@ -460,8 +458,8 @@ def build_contact(lang, depth):
 """.format(eyebrow=t["contact_eyebrow"], title=t["contact_title"], desc=t["contact_desc"],
            email_label=t["email_label"], email_title=t["email_title"], email_body=t["email_body"],
            email=EMAIL, mail_icon=icon("mail"), profiles=t["profiles"],
-           gh="https://github.com/siham-larbi", kg="https://www.kaggle.com/sihamlarbi", li="https://linkedin.com/in/siham-larbi",
-           github_icon=icon("github"), kaggle_icon=icon("kaggle"), linkedin_icon=icon("linkedin"),
+           gh="https://github.com/Siham-sissi", li="https://www.linkedin.com/in/siham-larbi",
+           github_icon=icon("github"), linkedin_icon=icon("linkedin"),
            form_title=t["form_title"], form_desc=t["form_desc"], f_name=t["f_name"], f_email=t["f_email"],
            f_message=t["f_message"], f_send=t["f_send"], arrow=icon("arrow"), f_note=t["f_note"])
     title = "%s \u2014 %s" % (t["contact_title"], SITE_NAME)
